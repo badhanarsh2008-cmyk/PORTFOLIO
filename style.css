@@ -1,0 +1,118 @@
+.glass {
+    background:rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+    padding: 40px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15)
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+.right img {
+    width: 70%;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+
+    padding: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+.glass {
+    transition: transform 0.4s ease;
+}
+
+.glass:hover {
+    transform: translateY(-6px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f172a;
+    font-family: Arial, sans-serif;
+    color: #e5e7eb;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT SIDE */
+.left {
+    width: 50%;
+    padding: 60px;
+}
+
+.left h1 {
+    font-size: 40px;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #cbd5f5;
+}
+
+.left h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+.left p {
+    line-height: 1.6;
+    color: #d1d5db;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    margin-right: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.insta {
+    background-color: #e1306c;
+}
+
+.whatsapp {
+    background-color: #22c55e;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* RIGHT SIDE */
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
