@@ -1,3 +1,32 @@
+.btn-github {
+  display: inline-flex;
+  gap: 10px;
+  margin-left: 3px;
+  margin-top: 6px;
+  padding: 12px 20px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  color: #fff;
+  text-decoration: none;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+
+  transition: all 0.3s ease;
+}
+
+.btn-github:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(255,255,255,0.25);
+}
+
+.btn-github svg {
+  fill: currentColor;
+}
+
 .glass {
     background:rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(15px);
@@ -9,16 +38,7 @@
     border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
 }
-.right img {
-    width: 70%;
-    border-radius: 20px;
 
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px);
-
-    padding: 10px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-}
 .glass {
     transition: transform 0.4s ease;
 }
@@ -100,6 +120,12 @@ body {
 }
 
 /* RIGHT SIDE */
+.model-glass p{
+  color:#065137;
+  margin-left: 150px;
+  margin-top: 10px;
+
+}
 .right {
     width: 50%;
     display: flex;
@@ -174,4 +200,79 @@ body {
 .fa-brands,
 .fa {
   font-family: "Font Awesome 6 Brands" !important;
+}
+.carousel{
+  display: flex;
+  gap:10px;
+}
+.card {
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,0.25);
+
+  box-shadow:
+    0 25px 50px rgba(0,0,0,0.6),
+    inset 0 0 20px rgba(255,255,255,0.15);
+
+  transform: perspective(1000px) translateZ(40px);
+  transition: transform 0.4s ease;
+  width: 300px;
+  background-color: rgba(255,255,255,0.12)
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: transform 0.3s ease , scale 1s ease;
+  margin-left: 60px;
+}
+.card strong{
+  color: #ff7a18;
+  font-size:22px;
+  letter-spacing: 1px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  scale: 1.1;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background-color: #5A4FCF;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.card button:hover {
+  color: #4f016b;
+  background-color: rgb(0, 120, 153);
+  transform: translateY(-3px)
+}
+h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  font-size: 50px;
+  color: antiquewhite;
+  text-shadow: #cbd5f5;
+}
+h4,h5,h6,h7{
+  color: #38bdf8;
+  font-size: 20px;
+}
+
+.carousel p{
+  margin-top: 5px;
+  color: #cbd5f5;
 }
